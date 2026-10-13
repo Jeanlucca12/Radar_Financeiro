@@ -1,0 +1,32 @@
+# Credenciais e configuracoes locais
+.env
+.env.*
+!.env.example
+*.secret
+*secrets*.json
+credentials.json
+
+# Arquivos temporarios e caches
+*.tmp
+*.temp
+*.bak
+*.log
+~$*
+.DS_Store
+Thumbs.db
+__pycache__/
+.pytest_cache/
+
+# Arquivos locais do Power BI (nao ignorar os .pbix do projeto)
+*.pbit.autorecover
+*.pbix.autorecover
+*.lock
+
+# Dados locais brutos ou exportacoes potencialmente sensiveis
+/data/raw/
+/data/private/
+/exports/
+
+# Editores
+.vscode/
+.idea/
